@@ -1,0 +1,63 @@
+.loader {
+    background: #fff;
+}
+
+.loader__image {
+    width: 120px;
+    height: 120px;
+    border: solid 10px #fff;
+    border-radius: 4px;
+}
+
+.loader__container {
+    width: 100%;
+}
+
+.loader__title {
+    height: 36px;
+    border-radius: 4px;
+}
+
+.loader__text {
+    height: 16px;
+    border-radius: 4px;
+}
+
+.loader__badg {
+    height: 16px;
+    width: 60px;
+    border-radius: 4px;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -454px 0
+    }
+    100%{
+        background-position: 454px 0
+    }
+}
+
+.shimmer {
+    animation-duration: 1.9s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f5f7f9;
+    background: linear-gradient(to right, #f5f7f9 2%, #ecedf1 22%, #f5f7f9 64%);
+    background-size: 908px;
+    position: relative;
+}
+
+@media (max-width: 540px) {
+    .loader {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .loader__image {
+        width: 353px;
+        height: 237px;
+    }
+}

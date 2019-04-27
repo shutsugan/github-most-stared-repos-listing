@@ -1,0 +1,38 @@
+.repo-item {
+    background: #fff;
+}
+
+.repo-item__image {
+    width: 120px;
+    height: 120px;
+    border: solid 10px #fff;
+    border-radius: 4px;
+}
+
+.repo-item__infos {
+    overflow-x: hidden;
+}
+
+.repo-item__title {
+    font-size: calc(20px + 1vmin);
+}
+
+.repo-item__description {
+    color: #666;
+}
+
+@media (max-width: 540px) {
+    .repo-item {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .repo-item__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .repo-item__infos {
+        width: 100%;
+    }
+}
